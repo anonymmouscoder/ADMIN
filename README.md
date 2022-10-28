@@ -2,19 +2,18 @@
 
 > Construit avec [grammY](https://grammy.dev).
 
-Bot de rapport simple et sensible au temps pour Telegram. Il écoute /report, /admin
-commandes ou @admin, @admins mentionne dans les groupes et mentionne tous les administrateurs. Administrateurs
-peuvent définir leur fuseau horaire et leur période d'indisponibilité dans le PM du bot et uniquement
+Bot de rapport simple et conscient du temps pour les groupes Telegram. S'il détecte /report, /admin ou @admin, @admins mentionné dans un  groupes il mentionneras tous les administrateurs. 
+Les administrateurs peuvent définir leur fuseau horaire et leur période d'indisponibilité dans le bot en privée et uniquement
 recevoir des mentions lorsqu'elles sont disponibles.
 
-Démo: [@bot](https://t.me/codingteamAdmin_bot)
+Démo: [@adminbot](https://t.me/codingteamAdmin_bot)
 
 Pour exécuter localement, assurez-vous d'avoir installé [Deno CLI](https://deno.land).
 
 ```sh
 git clone https://github.com/dcdunkan/ryportbot.git
 cd ryportbot
-BOT_TOKEN="<YOUR-TOKEN>" deno run --allow-net --allow-env main.ts
+BOT_TOKEN="<VOTRE-TOKEN>" deno run --allow-net --allow-env main.ts
 ```
 
 Allez à [BotFather](https://t.me/botfather) et procurez-vous un `BOT_TOKEN`.
