@@ -7,7 +7,7 @@ commandes ou @admin, @admins mentionne dans les groupes et mentionne tous les ad
 peuvent définir leur fuseau horaire et leur période d'indisponibilité dans le PM du bot et uniquement
 recevoir des mentions lorsqu'elles sont disponibles.
 
-Instance de travail (publique) : [@ryportbot](https://telegram.me/ryportbot)
+Démo: [@bot](https://t.me/codingteamAdmin_bot)
 
 Pour exécuter localement, assurez-vous d'avoir installé [Deno CLI](https://deno.land).
 
