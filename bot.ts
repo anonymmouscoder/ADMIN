@@ -74,7 +74,7 @@ async function reportHandler(ctx: ReportContext) {
     }
   }
 
-  let msg = `Signalé <a href="${
+  let msg = `Signalement à <a href="${
     report.is_user
       ? `tg://user?id=${report.id}`
       : `https://t.me/${report.username}` // pas possible d'envoyer des messages en tant que canaux privés : sûr de supposer qu'il y aura un nom d'utilisateur
@@ -122,7 +122,7 @@ async function reportHandler(ctx: ReportContext) {
 
   await ctx.reply(msg, {
     parse_mode: "HTML",
-    reply_markup: new InlineKeyboard().text("Handled", "handled"),
+    reply_markup: new InlineKeyboard().text("Résolu", "handled"),
     reply_to_message_id: reportedMsg.message_id,
   });
 }
