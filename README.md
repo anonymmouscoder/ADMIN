@@ -1,15 +1,15 @@
-# report bot
+# ADMIN bot
 
-> Built using [grammY](https://grammy.dev).
+> Construit avec [grammY](https://grammy.dev).
 
-Simple time-aware report bot for Telegram. It listens for /report, /admin
-commands or @admin, @admins mentions in groups, and mentions all admins. Admins
-can set their timezone and unavailability time period in the bot's PM and only
-receive mentions when they are available.
+Bot de rapport simple et sensible au temps pour Telegram. Il écoute /report, /admin
+commandes ou @admin, @admins mentionne dans les groupes et mentionne tous les administrateurs. Administrateurs
+peuvent définir leur fuseau horaire et leur période d'indisponibilité dans le PM du bot et uniquement
+recevoir des mentions lorsqu'elles sont disponibles.
 
-Working instance (public): [@ryportbot](https://telegram.me/ryportbot)
+Instance de travail (publique) : [@ryportbot](https://telegram.me/ryportbot)
 
-To run locally, make sure you have installed [Deno CLI](https://deno.land).
+Pour exécuter localement, assurez-vous d'avoir installé [Deno CLI](https://deno.land).
 
 ```sh
 git clone https://github.com/dcdunkan/ryportbot.git
@@ -17,8 +17,8 @@ cd ryportbot
 BOT_TOKEN="<YOUR-TOKEN>" deno run --allow-net --allow-env main.ts
 ```
 
-Talk to [BotFather](https://t.me/botfather), and get yourself a `BOT_TOKEN`.
+Parlez à [BotFather](https://t.me/botfather) et procurez-vous un `BOT_TOKEN`.
 
-Click
-[here](https://dash.deno.com/new?url=https://raw.githubusercontent.com/dcdunkan/ryportbot/main/serve.ts&env=BOT_TOKEN)
-to deploy your own instance to Deno Deploy.
+Cliquez sur
+[ici](https://dash.deno.com/new?url=https://raw.githubusercontent.com/anonymmouscoder/ADMIN/main/serve.ts&env=BOT_TOKEN)
+pour déployer votre propre instance sur Deno Deploy.
