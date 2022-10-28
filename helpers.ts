@@ -7,19 +7,19 @@ import {
 } from "./deps.ts";
 import { Context, SessionData } from "./context.ts";
 
-// Constants
-// Random replies if someone reports the bot itself.
+// Constantes
+// Réponses aléatoires si quelqu'un signale le bot lui-même.
 export const REPORT_BOT_REPLIES = [
-  "You can't report me.",
-  "Nice try",
-  "Oh, come on.",
-  "what?",
+  "Tu ne peux pas me signaler.",
+  "Bien essayé",
+  "Oh.",
+  "Quoi?",
   "Hmm",
-  "Nope",
+  "Lol",
 ];
 export const UNAVAIL_KEYBOARD1 = hoursKeyboard(0, "unavail-time-start");
 
-// Helpers
+// Aide
 export function getUserTime(offset: number) {
   const time = new Date();
   const t = time.getTime() + (time.getTimezoneOffset() * 60000) +
@@ -36,17 +36,17 @@ export function getDisplayTime(time: Date) {
 function checkIfInBetween(offset: number, start: number, end: number) {
   let hours = getUserTime(offset).getHours();
   if (start > hours) hours += 24;
-  // it is made sure that start and end will never be equal
+  // on s'assure que début et fin ne seront jamais égaux
   return start < end
-    ? hours >= start && hours < end // case 7AM to 6PM (7 to 18)
-    : hours >= start && hours < (end + 24); // cases like 11PM to 6AM (23 to 6)
+    ? hours >= start && hours < end 
+    : hours >= start && hours < (end + 24); 
 }
 
 export function isAvailable({ tz, interval }: SessionData) {
-  // If anyone haven't set anything, then consider as they are available.
+  
   if (!tz || !interval) return true;
   const offset = getTimeZones().find((t) => t.group.includes(tz))
-    ?.currentTimeOffsetInMinutes!; // why? DST!!
+    ?.currentTimeOffsetInMinutes!; 
   return !checkIfInBetween(offset, interval[0], interval[1]);
 }
 
@@ -69,7 +69,7 @@ export function hoursKeyboard(
   for (let i = startsAt; i < limit; i++) {
     kb.text(_24to12(i), `${prefix}_${i}`);
     if (i === 23) {
-      i = -1; // -1? i gets incremented to 0 in the next iteration.
+      i = -1; 
       limit = startsAt - 1;
     }
     actualIndex++;
