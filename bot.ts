@@ -418,10 +418,10 @@ exceptChannel.command("help", async (ctx) => {
   await ctx.reply(
     ctx.chat.type !== "private"
       ? "Utilisez /report pour signaler quelqu'un aux administrateurs."
-      : `Ajoutez-moi à votre groupe afin que je puisse aider les membres de votre groupe à/signaler d'autres membres (tels que des spammeurs, etc.) aux administrateurs du groupe. \
+      : `Ajoutez-moi à votre groupe afin que je puisse aider les membres de votre groupe à signaler d'autres membres (tels que des spammeurs, etc.) aux administrateurs du groupe. \
 Je suis différent des autres robots qui font la même chose car je suis conscient du temps!
 
-<b>Comment suis-je conscient du temps?</b>
+<b>💆🏻Comment suis-je conscient du temps?</b>
 Eh bien, je ne suis pas vraiment conscient du temps sans que vous définissiez votre temps avec /timezone. \
 Si vous en définissez un, une période d'indisponibilité est également définie (que vous pouvez personnaliser à l'aide de /unavail). \
 C'est ça! Dès lors, chaque fois que quelqu'un utilisera la commande /report dans un groupe dont vous êtes l'administrateur, \
@@ -429,7 +429,7 @@ Je vérifierai votre heure actuelle, et si vous n'êtes pas disponible, je ne vo
 
 <b>Remarque</b> : Peu importe à quel point vous êtes occupé, vous recevrez des mentions si vous êtes le créateur du chat et si aucun autre administrateur n'est disponible pour le moment.
 
-<b>Mode Ne pas déranger</b>
+<b>🤐Mode Ne pas déranger</b>
 Vous pouvez activer ou désactiver le mode <i>Ne pas déranger</i> en utilisant /dnd. \
 Lorsque vous l'avez activé, le bot ne vous mentionnera pas du tout.
 
