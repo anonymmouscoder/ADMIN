@@ -17,8 +17,8 @@ cd ryportbot
 BOT_TOKEN="<YOUR-TOKEN>" deno run --allow-net --allow-env main.ts
 ```
 
-Parlez à [BotFather](https://t.me/botfather) et procurez-vous un `BOT_TOKEN`.
+Allez à [BotFather](https://t.me/botfather) et procurez-vous un `BOT_TOKEN`.
 
-Cliquez sur
+Cliquez
 [ici](https://dash.deno.com/new?url=https://raw.githubusercontent.com/anonymmouscoder/ADMIN/main/serve.ts&env=BOT_TOKEN)
 pour déployer votre propre instance sur Deno Deploy.
