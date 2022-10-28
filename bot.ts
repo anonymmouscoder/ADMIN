@@ -407,7 +407,7 @@ exceptChannel.command("start", async (ctx) => {
   await ctx.reply(
     ctx.chat.type !== "private"
       ? "Salut! Pour de l'aide envoyez-moi /help."
-      : `Salut! Je peux mentionner les administrateurs dans une discussion de groupe lorsque quelqu'un signale quelque chose. \
+      : `✋Salut! Je peux mentionner les administrateurs dans une discussion de groupe lorsque quelqu'un signale quelque chose. \
 Mais, contrairement à d'autres bots qui font la même chose, je ne te tague que lorsque tu es disponible.
 ${helpText}
 Voir /help pour plus d'informations.`,
@@ -418,12 +418,12 @@ exceptChannel.command("help", async (ctx) => {
   await ctx.reply(
     ctx.chat.type !== "private"
       ? "Utilisez /report pour signaler quelqu'un aux administrateurs."
-      : `Ajoutez-moi à votre groupe afin que je puisse aider les membres de votre groupe à signaler d'autres membres (tels que des spammeurs, etc.) aux administrateurs du groupe. \
+      : `Ajoutez-moi à votre groupe afin que je puisse aider les membres de votre groupe à signaler d'autres membres (tels que des spammeurs, etc.) aux administrateurs du groupe.\
 Je suis différent des autres robots qui font la même chose car je suis conscient du temps!
 
 <b>💆🏻Comment suis-je conscient du temps?</b>
 Eh bien, je ne suis pas vraiment conscient du temps sans que vous définissiez votre temps avec /timezone. \
-Si vous en définissez un, une période d'indisponibilité est également définie (que vous pouvez personnaliser à l'aide de /unavail). \
+Si vous en définissez un, une période d'indisponibilité seara également définie (que vous pouvez personnaliser à l'aide de /unavail). \
 C'est ça! Dès lors, chaque fois que quelqu'un utilisera la commande /report dans un groupe dont vous êtes l'administrateur, \
 Je vérifierai votre heure actuelle, et si vous n'êtes pas disponible, je ne vous mentionnerai pas.
 
@@ -433,7 +433,7 @@ Je vérifierai votre heure actuelle, et si vous n'êtes pas disponible, je ne vo
 Vous pouvez activer ou désactiver le mode <i>Ne pas déranger</i> en utilisant /dnd. \
 Lorsque vous l'avez activé, le bot ne vous mentionnera pas du tout.
 
-<b>À propos</b>
+<b>🔥A propos</b>
 Code source: https://github.com/anonymmouscoder/ADMIN
 Par @A_liou de @codingtuto.`,
     HTML,
