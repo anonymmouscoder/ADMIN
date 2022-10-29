@@ -419,7 +419,7 @@ exceptChannel.command("help", async (ctx) => {
     ctx.chat.type !== "private"
       ? "Utilisez /report pour signaler quelqu'un aux administrateurs."
       : `Ajoutez-moi à votre groupe afin que je puisse aider les membres de votre groupe à signaler d'autres membres (tels que des spammeurs, etc.) aux administrateurs du groupe.\
-Je suis différent des autres robots qui font la même chose car je suis conscient du temps!
+Je suis différent des autres robots qui font la même chose car je suis conscient du temps
 
 <b>💆🏻Comment suis-je conscient du temps?</b>
 Eh bien, je ne suis pas vraiment conscient du temps sans que vous définissiez votre temps avec /timezone. \
